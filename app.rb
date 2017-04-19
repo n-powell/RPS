@@ -8,6 +8,8 @@ get('/') do
 end
 
 get('/result') do
-  @result = params.fetch('result').scrabble()
+  @result = params.fetch('player1').scrabble('player2')
   erb(:result)
 end
+
+receiver.method(argument)

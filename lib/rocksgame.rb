@@ -9,10 +9,10 @@ class String
       "Tie!"
     elsif (self == "paper") && (second == "rock")
       true
-    elsif (self =="paper") && (second == "paper")
-      "Tie!"
     elsif (self == "paper") && (second == "scissors")
       false
+    elsif (self =="paper") && (second == "paper")
+      "Tie!"
     elsif (self == "scissors") && (second == "paper")
       true
     elsif (self == "scissors") && (second == "rock")
