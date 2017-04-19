@@ -16,4 +16,16 @@ require ('./lib/rocksgame')
       expect("scissors".beats?("paper")).to(eq(true))
     end
 
+    it("returns a string 'tie!' if user chose both rock") do
+      expect("rock".beats?("rock")).to(eq("Tie!"))
+    end
+
+    it("returns a string 'tie!' if user chose both scissors") do
+      expect("scissors".beats?("scissors")).to(eq("Tie!"))
+    end
+
+    it("returns a string 'tie!' if user chose both paper") do
+      expect("paper".beats?("paper")).to(eq("Tie!"))
+    end
+
 end
