@@ -28,4 +28,16 @@ require ('./lib/rocksgame')
       expect("paper".beats?("paper")).to(eq("Tie!"))
     end
 
+    it("returns'false' if paper beats rock") do
+      expect("paper".beats?("scissors")).to(eq(false))
+    end
+
+    it("returns false if scissors beats paper") do
+      expect("scissors".beats?("rock")).to(eq(false))
+    end
+
+    it("returns false if rock beats paper") do
+      expect("rock".beats?("paper")).to(eq(false))
+    end
+
 end
